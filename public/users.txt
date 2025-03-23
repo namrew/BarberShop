@@ -1,0 +1,23 @@
+User: qqq, phone: 111, date & time: 11-11 11"11.
+User: www, phone: 222, date & time: 22-22 22:22.
+User: eee, phone: 333, date & time: 33-33 33:33.
+User: rrr, phone: 444, color: , date & time: 44-44 44:44.
+User: ttt, phone: 555, color: , date & time: 55-55 55:55.
+User: ttt, phone: 555, barber: gus_fring, color: , date & time: 55-55 55:55.
+User: yyy, phone: 666, barber: jessie_pinkman, color: #46d6db, date & time: 66-66 66:66.
+User: uuu, phone: 777, barber: walt_haizenberg, color: #dc2127, date & time: 77-77 77:77.
+User: , phone: , barber: jessie_pinkman, color: #7bd148, date & time: .
+User: 5342g, phone: , barber: jessie_pinkman, color: #7bd148, date & time: .
+User: ooo, phone: 999-99-99, barber: gus_fring, color: #5484ed, date & time: 99-99 99:99.
+User: 1234, phone: 1234, barber: jessie_pinkman, color: #7bd148, date & time: 1234.
+User: 53445h, phone: , barber: jessie_pinkman, color: #7bd148, date & time: .
+User: , phone: , barber: jessie_pinkman, color: #7bd148, date & time: .
+User: iii, phone: 888, barber: gus_fring, color: #5484ed, date & time: 88-88 88:88.
+User: iii, phone: 888, barber: gus_fring, color: #5484ed, date & time: 88-88 88:88.
+User: iii, phone: 888, barber: gus_fring, color: #5484ed, date & time: 88-88 88:88.
+User: iii, phone: 888, barber: gus_fring, color: #5484ed, date & time: 88-88 88:88.
+User: ooo, phone: 000, barber: walt_haizenberg, color: #dc2127, date & time: 00-00 00:00.
+User: , phone: , barber: Gus Fring, color: #7bd148, date & time: .
+User: , phone: , barber: Walt Haizenberg, color: #7bd148, date & time: .
+User: , phone: , barber: Walt Haizenberg, color: #7bd148, date & time: .
+User: 5t5t5t, phone: 6543-6747, barber: Peter Parker, color: #7bd148, date & time: 11-22 33:44.

@@ -1,0 +1,8 @@
+<h3>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiyoooooooooooooooo !!!!!!!!!!!!!!!!</h3>
+
+<p>Signed up clients are:</p>
+<% @file.each_line do |line| %>
+	<p><%= line %></p>
+<% end %>
+
+<% @file.close %> 

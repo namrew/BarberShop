@@ -1,0 +1,66 @@
+<h2>Visit Us</h2>
+<p>On this page You could sign to visit our barbershop</p>
+
+<form action="/visit" method="POST" role="form" class="form-group">
+  <div>
+    <label>Your name</label>
+    <input name="user_name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Your name here" value="<%= @user_name %>">
+  </div>
+
+  <div>
+    <label>Your phone</label>
+    <input id="aaa" name="user_phone" type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Your phone here" value="<%= @user_phone %>">
+  </div>
+
+  <div>
+    <label>Date & time</label>
+    <input name="date_time" type="text" class="form-control ccc" id="exampleInputEmail1" placeholder="Type date & time here" value="<%= @date_time %>">
+  </div>
+
+  <div>
+    <label >Select Barber</label>
+    <select name="barber" type="text" class="form-control" id="exampleInputEmail1">
+      <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %>>Jessie Pinkman</option>
+      <option <%= @barber == 'Walt Haizenberg' ? 'selected' : '' %>>Walt Haizenberg</option>
+      <option <%= @barber == 'Gus Fring' ? 'selected' : '' %>>Gus Fring</option>
+      <option <%= @barber == 'Peter Parker' ? 'selected' : '' %>>Peter Parker</option>
+    </select>
+  </div>
+
+  <div>
+  <p></p>
+    <label>Pick a color</label>
+    <select name="color" id="color">
+      <option value="#7bd148">Green</option>
+      <option value="#5484ed">Bold blue</option>
+      <option value="#a4bdfc">Blue</option>
+      <option value="#46d6db">Turquoise</option>
+      <option value="#7ae7bf">Light green</option>
+      <option value="#51b749">Bold green</option>
+      <option value="#fbd75b">Yellow</option>
+      <option value="#ffb878">Orange</option>
+      <option value="#ff887c">Red</option>
+      <option value="#dc2127">Bold red</option>
+      <option value="#dbadff">Purple</option>
+      <option value="#e1e1e1">Gray</option>
+    </select>
+  </div>
+
+  <p></p>
+  <button type="submit" class="btn btn-primary">Press this to submit</button>
+</form>
+
+<p><%= @thank_you %></p>
+<p><%= @dear_user %></p>
+
+<script type="text/javascript">
+  alert('Nina! I love You so much!');
+  $('#aaa').css('background-color', 'yellow');
+  $('.ccc').css('background-color', 'red');
+
+  $(function(){
+    $('#color ').simplecolorpicker();
+  });
+<%#   $('select[name="colorpicker"]').simplecolorpicker('selectColor', '#7bd148');
+  $('select[name="colorpicker"]').simplecolorpicker('destroy'); %>
+</script>
