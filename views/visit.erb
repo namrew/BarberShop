@@ -2,22 +2,22 @@
 <p>On this page You could sign to visit our barbershop</p>
 
 <form action="/visit" method="POST" role="form" class="form-group">
-  <div>
+  <div class="form-group">
     <label>Your name</label>
     <input name="user_name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Your name here" value="<%= @user_name %>">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Your phone</label>
     <input id="aaa" name="user_phone" type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Your phone here" value="<%= @user_phone %>">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Date & time</label>
-    <input name="date_time" type="text" class="form-control ccc" id="exampleInputEmail1" placeholder="Type date & time here" value="<%= @date_time %>">
+    <input name="date_time" type="text" class="form-control ccc" id="datetimepicker" placeholder="Type date & time here" value="<%= @date_time %>">
   </div>
 
-  <div>
+  <div class="form-group">
     <label >Select Barber</label>
     <select name="barber" type="text" class="form-control" id="exampleInputEmail1">
       <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %>>Jessie Pinkman</option>
@@ -27,7 +27,7 @@
     </select>
   </div>
 
-  <div>
+  <div class="form-group">
   <p></p>
     <label>Pick a color</label>
     <select name="color" id="color">
@@ -59,8 +59,15 @@
   $('.ccc').css('background-color', 'red');
 
   $(function(){
-    $('#color ').simplecolorpicker();
+    $('#color').simplecolorpicker();
+    $('#datetimepicker').datetimepicker({
+      format:'unixtime'});
   });
 <%#   $('select[name="colorpicker"]').simplecolorpicker('selectColor', '#7bd148');
   $('select[name="colorpicker"]').simplecolorpicker('destroy'); %>
+<%#   jQuery('#datetimepicker3').datetimepicker({
+    format:'d.m.Y H:i',
+    inline:true,
+    lang:'ru'
+  }); %>
 </script>

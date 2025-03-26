@@ -62,9 +62,6 @@ post '/admin' do
 		@file = File.open("./public/users.txt", "r")
 		erb :diary
 		# @file.close
-		# @message = "Welcome"
-		# @href = '<a href="/diary">Diary</a>'
-		# erb :welcome
 
 	else
 		@message = "wrong login or password"
@@ -86,8 +83,6 @@ post '/visit' do
 		:date_time => 'Input date & time'
 	}
 
-	@error = hh.select {|key,_| params[key] == ""}.values.join(", ")
-
 	# hh.each do |key, value|
 	# 	if params[key] == ''
 	# 		@error = hh[key]
@@ -96,6 +91,8 @@ post '/visit' do
 			
 	# 	end
 	# end
+
+	@error = hh.select {|key,_| params[key] == ""}.values.join(", ")
 
 	@thank_you = "Thank You :)"
 	@dear_user = "Dear #{@user_name} !, we are awaiting Yo at #{@date_time} !"
@@ -107,7 +104,13 @@ post '/visit' do
 
 	db = get_db
 	db.execute 'INSERT INTO 
-		Users (user_name, user_phone, date_time, barber, color)
+		Users (
+						user_name,
+						user_phone,
+						date_time,
+						barber,
+						color
+					)
 		VALUES (?, ?, ?, ?, ?)', [@user_name, @user_phone, @date_time, @barber, @color]
 
 	# @db.close
